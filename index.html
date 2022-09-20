@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Ahorcado</title>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo alura.png" alt="Logo de Alura" class="logo-alura">
+    </header>
+
+    <div id="div-desaparece" class="botones-home">
+        <a href="#lienzo">
+                <input class="btn-iniciar" type="submit" value="iniciar Juego" id="inicioJuego" onclick="iniciarJuego()">
+        </a>
+
+    </div>
+
+    <div>
+        <a href="desktop2.html">
+            <input class="btn-ingresarPalabra" type="submit" value="Ingresar palabra">
+        </a>
+    </div>
+
+
+    <div id="div-aparece-ahorcado" class="canvas">
+        <canvas id="lienzo" width="1200" height="860"></canvas>
+
+    <div class="subrayado">
+
+    </div>
+    </div>
+
+
+<script src="javascript.js"></script>
+<script src="canvas.js"></script>
+    </body>
+</html>
