@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-
     <title>Ahorcado</title>
 </head>
 
@@ -15,22 +14,9 @@
         <img src="imagenes/logo alura.png" alt="Logo de Alura" class="logo-alura">
     </header>
 
-
-    <div id="div-desaparece">
-
-        <a href="#lienzo">
-            <input class="btn-iniciar" type="submit" value="iniciar Juego" id="inicioJuego" onclick="iniciarJuego()"> 
-        </a>
-    
-        <a href="ingresarpalabra.html">
-            <input class="btn-ingresarPalabra" type="submit" value="Ingresar palabra" >
-        </a>
-
+    <div id="ingresarTxt">
+        <textarea type="text" placeholder="Ingrese una palabra" id="ingresarPalabra"></textarea>
     </div>
-    
-    <section id="ingresarTxt">
-        <textarea type="text" placeholder="Ingrese una palabra" value="default" id="ingresarPalabra"></textarea>
-    </section>
 
     <div id="alerta">
             <img src="imagenes/alerta.png" alt="imagen de alerta">
@@ -43,14 +29,21 @@
             <input type="submit" value="cancelar" onclick="cancelar()" id="btn-cancelar" href="index.html">
     </div>
     
-    <div id="div-aparece-ahorcado" class="canvas">
-        <canvas id="lienzo" width="1200" height="860"></canvas>
-    
-        <input type="submit" value="Volver a jugar">
-        <input type="submit" value="abortar">
-        
-    </div>
 
+
+    <section id="div-aparece-ahorcado" class="canvas">
+        <div>
+            <canvas id="lienzo" width="1200" height="860"></canvas>
+        </div>
+
+        <div id="btns-lienzo">
+            <input type="submit" value="Volver a jugar">
+            <input type="submit" value="abortar">
+        </div>
+         
+    </section>
+   
+        
     <div class="subrayado">
 
     </div>
